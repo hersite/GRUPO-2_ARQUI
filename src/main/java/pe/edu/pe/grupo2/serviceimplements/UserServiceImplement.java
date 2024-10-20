@@ -11,6 +11,7 @@ import pe.edu.pe.grupo2.repositories.UserRepository;
 import pe.edu.pe.grupo2.serviceinterfaces.UserService;
 
 
+import java.time.LocalDate;
 import java.util.List;
 @Service
 public class UserServiceImplement implements UserService {
@@ -57,12 +58,11 @@ public class UserServiceImplement implements UserService {
     public List<UserCentroReciclajeDTO> obtenerUsuarioConCentrosDeReciclajeFavorito(Boolean favoritos) {
         return uR.findUserWithCentrosReciclajeFiltered(favoritos);
     }
-<<<<<<< Updated upstream
-=======
+
     @Override
     public List<String[]> Cantidadnotificaciones_deusuario_rangohoras(LocalDate horaInicio, LocalDate horaFin) {
         return uR.Cantidadnotificaciones_deusuario_rangohoras(horaInicio, horaFin);
     }
->>>>>>> Stashed changes
+
 
 }

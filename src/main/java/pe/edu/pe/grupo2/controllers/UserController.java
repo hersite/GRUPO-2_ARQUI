@@ -4,16 +4,13 @@ package pe.edu.pe.grupo2.controllers;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import pe.edu.pe.grupo2.dtos.CantidadNotiUsuarioDTO;
 import pe.edu.pe.grupo2.dtos.UserCentroReciclajeDTO;
 import pe.edu.pe.grupo2.dtos.UserDTO;
 import pe.edu.pe.grupo2.entities.User;
 import pe.edu.pe.grupo2.serviceinterfaces.UserService;
-
-<<<<<<< Updated upstream
-=======
 import java.time.LocalDate;
 import java.util.ArrayList;
->>>>>>> Stashed changes
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -84,8 +81,6 @@ public class UserController {
 
         return uS.obtenerUsuarioConCentrosDeReciclajeFavorito(favoritos);
     }
-<<<<<<< Updated upstream
-=======
     @GetMapping("/conteo_notificaciones_rangoHoras")
     //   @PreAuthorize("hasAuthority('ADMINISTRADOR')")
     public List<CantidadNotiUsuarioDTO> Cantidadnotificaciones_deusuario_rangohoras(@RequestParam LocalDate diaInicio, @RequestParam LocalDate diaFin) {
@@ -99,7 +94,5 @@ public class UserController {
         }
         return dtoLista;
     }
-
->>>>>>> Stashed changes
 
 }
