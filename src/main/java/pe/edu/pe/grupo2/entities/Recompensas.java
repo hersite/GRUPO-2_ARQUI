@@ -14,6 +14,9 @@ public class Recompensas {
     @Column(name = "nombreRecompensa", nullable = false, length = 200)
     private String nombreRecompensa;
 
+    @Column(name = "descripcionRecompensa", nullable = false, length = 200)
+    private String descripcionRecompensa;
+
     @Column(name = "codigoQR", nullable = false, length = 1000)
     private String codigoQR;
 
@@ -27,11 +30,12 @@ public class Recompensas {
     public Recompensas() {
     }
 
-    public Recompensas(int idRecompensas, String nombreRecompensa, String codigoQR, LocalDate fechaVencimiento) {
+    public Recompensas(int idRecompensas, String nombreRecompensa, String codigoQR, LocalDate fechaVencimiento,String descripcionRecompensa) {
         this.idRecompensas = idRecompensas;
         this.nombreRecompensa = nombreRecompensa;
         this.codigoQR = codigoQR;
         this.fechaVencimiento = fechaVencimiento;
+        this.descripcionRecompensa = descripcionRecompensa;
     }
 
     public int getIdRecompensas() {
@@ -72,5 +76,13 @@ public class Recompensas {
 
     public void setAc(Actividad ac) {
         this.ac = ac;
+    }
+
+    public String getDescripcionRecompensa() {
+        return descripcionRecompensa;
+    }
+
+    public void setDescripcionRecompensa(String descripcionRecompensa) {
+        this.descripcionRecompensa = descripcionRecompensa;
     }
 }

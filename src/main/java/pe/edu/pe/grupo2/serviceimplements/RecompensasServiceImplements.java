@@ -8,7 +8,7 @@ import pe.edu.pe.grupo2.serviceinterfaces.IRecompensasService;
 import java.util.List;
 
 @Service
-public class IRecompensasServiceImplements implements IRecompensasService {
+public class RecompensasServiceImplements implements IRecompensasService {
     @Autowired
     private IRecompensasRepository rR;
 

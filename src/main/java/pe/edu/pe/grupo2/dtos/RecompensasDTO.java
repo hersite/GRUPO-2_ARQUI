@@ -9,6 +9,7 @@ public class RecompensasDTO {
     private String nombreRecompensa;
     private String codigoQR;
     private LocalDate fechaVencimiento;
+    private String descripcionRecompensa;
 
     private Actividad ac;
 
@@ -50,5 +51,13 @@ public class RecompensasDTO {
 
     public void setAc(Actividad ac) {
         this.ac = ac;
+    }
+
+    public String getDescripcionRecompensa() {
+        return descripcionRecompensa;
+    }
+
+    public void setDescripcionRecompensa(String descripcionRecompensa) {
+        this.descripcionRecompensa = descripcionRecompensa;
     }
 }
